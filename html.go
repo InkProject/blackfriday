@@ -516,7 +516,7 @@ func (options *Html) Image(out *bytes.Buffer, link []byte, title []byte, alt []b
 		return
 	}
 
-	out.WriteString("<img data-src=\"")
+	out.WriteString("<img src=\"/images/loader.gif\" data-src=\"")
 	options.maybeWriteAbsolutePrefix(out, link)
 	attrEscape(out, link)
 	out.WriteString("\" alt=\"")
